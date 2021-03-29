@@ -1,0 +1,76 @@
+body {
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    width: 400px;
+    height: 400px;
+
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+}
+
+.dot {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+
+    position: relative;
+}
+
+.elem1 {
+    background-color: #ADEDEE;
+
+    animation: moveDots 2s ease-in-out alternate-reverse infinite;
+}
+
+.elem2 {
+    background-color: #FC7F6F;
+    animation: moveDots 2s ease-in alternate-reverse infinite;
+}
+
+.elem3 {
+    background-color: #84CDFC;
+    animation: moveDots 2s ease-out alternate-reverse infinite;
+}
+
+.elem4 {
+    background-color: #F0E786;
+    animation: moveDots 2s cubic-bezier(.01, .71, 1, .38) alternate-reverse infinite;
+}
+
+.elem5 {
+    background-color: #3FD1CD;
+    animation: moveDots 2s linear alternate-reverse infinite;
+}
+
+.elem6 {
+    background-color: #D9BED9;
+    animation: moveDots 2s cubic-bezier(.47, .12, .56, .92) alternate-reverse infinite;
+}
+
+@keyframes moveDots {
+    0% {
+        bottom: 400px;
+    }
+
+    25% {
+        bottom: 0px;
+    }
+
+    50% {
+        bottom: 20px;
+    }
+
+    100% {
+        bottom: 0px;
+    }
+}
