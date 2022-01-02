@@ -1,1 +1,1 @@
-[GitHub Pages](https://toshiteshigure.github.io/loading-screen-css-animation-dots/)
+[GitHub Pages](https://tsuyune.github.io/loading-screen-css-animation-dots/)
